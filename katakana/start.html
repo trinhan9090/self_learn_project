@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katakana Flashcard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="../index.html" class="return-card">← Back to Main Menu</a>
+  
+
+  <div class="flashcard-container">
+    <h1>Katakana Flashcard</h1>
+    <div id="card" class="card">あ</div>
+    <div class="options" id="options"></div>
+    <div id="result" class="result"></div>
+    <button onclick="nextCard()">Next</button>
+  </div>
+
+  <div class="help-card" onclick="toggleHelp()">Help</div>
+
+    <div id="help-content" class="help-content hidden">
+    <h2>Hiragana Chart</h2>
+    <div class="grid">
+      <!-- This will be filled by JavaScript -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

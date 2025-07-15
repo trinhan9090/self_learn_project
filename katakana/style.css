@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.flashcard-container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.card {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #ddd;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.help-card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.help-card:hover {
+  background-color: #555;
+}
+
+.help-content {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.help-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.help-content .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.help-content .grid div {
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+.return-card {
+  position: absolute;
+  margin-top: 20px;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  
+}
+
+.return-card:hover {
+  background-color: #ccc;
+}

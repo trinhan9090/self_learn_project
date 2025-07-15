@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.main-menu {
+  margin: 0;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #ff6600;
+  margin-bottom: 50px;
+}
+
+.start-card {
+  margin: 0;
+  display: inline-block ;
+  padding: 30px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.start-card:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+.hidden {
+  display: none;
+}
