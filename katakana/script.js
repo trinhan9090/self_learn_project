@@ -40,6 +40,8 @@ const katakanaList = [
 
 let currentQuestion;
 
+let score = 0;
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -77,16 +79,26 @@ function generateCard() {
 
 function checkAnswer(selected) {
   const result = document.getElementById("result");
+  const points = document.getElementById("points");
+  const op = document.getElementById("options");
   if (selected === currentQuestion.romaji) {
-    result.textContent = "✅ Correct!";
+    result.textContent = "✅ Chính xác!";
     result.style.color = "green";
+    score += 1; 
+    points.textContent = score;
+    op.style.display = "none";
+
   } else {
-    result.textContent = `❌ Wrong! `;
+    result.textContent = `❌ Sai rầu! Đáp án chuẩn là:${currentQuestion.romaji} `;
+    score -= 2;
     result.style.color = "red";
+    op.style.display = "none";
   }
 }
 
 function nextCard() {
+  const op = document.getElementById("options");
+  op.style.display = "flex";
   generateCard();
 }
 function toggleHelp() {
